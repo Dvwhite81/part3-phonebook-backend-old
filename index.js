@@ -16,6 +16,7 @@ morgan.token('post', req => {
 morgan.format('postFormat', ':method :url :status :res[content-length] - :response-time ms :post')
 app.use(morgan('postFormat'))
 app.use(cors())
+app.use(express.static('dist'))
 
 // Starting data
 let persons = [
