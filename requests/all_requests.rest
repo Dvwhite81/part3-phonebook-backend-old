@@ -1,0 +1,17 @@
+
+// Get all
+GET http://localhost:3001/api/persons
+
+###
+// Add person
+POST http://localhost:3001/api/persons HTTP/1.1
+Content-Type: application/json
+
+{
+	"name": "John Smith",
+	"number": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+###
+// Delete person
+DELETE http://localhost:3001/api/persons/78306
